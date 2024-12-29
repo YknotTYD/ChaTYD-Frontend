@@ -14,21 +14,22 @@
 
 ftch = document.getElementById("fetch");
 
-fetch('https://yknottyd.duckdns.org/api', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({key: 'value'}),
-})
-.then(
-(response) => {
-    return response.text()
-})
-.then(data => {
-    ftch.textContent = data;
-})
-.catch((error) => console.error('Error:', error));
+function ask_backend_time() {
+
+    fetch('https://yknottyd.duckdns.org/api', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({key: 'value'}),
+    }).then((response) => {
+        return response.text()
+    }).then(data => {
+        ftch.textContent = data;
+    })
+}
+
+ask_backend_time();
 
         </script>
     </body>
