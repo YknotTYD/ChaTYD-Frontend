@@ -7,86 +7,20 @@
     <head>
 
         <title>Fetch API Test</title>
-
-        <style>
-
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
-
-.source-code-pro {
-  font-family: "Source Code Pro", monospace;
-  font-optical-sizing: auto;
-  font-weight: 11;
-  font-style: normal;
-}
-
-body {background-color: #000033; font-family : "Source Code Pro"}
-h1 {color: white; font-size: 5em}
-h2 {color: white;}
-h3 {color: white;}
-h4 {color: white;}
-p {color: white;}
-button {color: white; background-color: blue; font-size: 3em}
-
-        </style>
+        <link rel = "stylesheet" href = style.css>
 
     </head>
 
     <body>
 
         <br><br><br><br><br><br>
-
         <div style = "margin: auto; text-align: center; transform-origin: center">
-
             <h1 id = "fetch">None3</h1>
             <button onclick = "tell_backend_button_click()">Button</button>
-
         </div>
     
-        <script>
+        <script src = api.js></script>
 
-ftch = document.getElementById("fetch");
-btn = document.getElementById("button");
-
-async function tell_backend_button_click() {
-
-    fetch('https://yknottyd.duckdns.org/api', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({request: "button_click"}),
-    }).then((response) => {
-        return response.text()
-    }).then(data => {
-        ftch.textContent = data;
-    })
-}
-
-async function ask_backend_button_clicks() {
-
-    fetch('https://yknottyd.duckdns.org/api', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({request: "ask"}),
-    }).then((response) => {
-        return response.text()
-    }).then(data => {
-        ftch.textContent = data;
-    })
-}
-
-async function ask_backend_clicks_loop() {
-    while (1) {
-        ask_backend_button_clicks();
-        await new Promise(resolve => setTimeout(resolve, 100));
-    }
-}
-
-ask_backend_clicks_loop();
-
-        </script>
     </body>
 
 </html>
