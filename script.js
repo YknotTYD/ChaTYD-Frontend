@@ -1,7 +1,8 @@
 //api.js
 
-ftch = document.getElementById("fetch");
-btn = document.getElementById("button");
+const input = document.querySelector('input');
+const ftch = document.getElementById("fetch");
+const btn = document.getElementById("button");
 
 async function tell_backend_button_click() {
 
@@ -39,5 +40,11 @@ async function ask_backend_clicks_loop() {
         await new Promise(resolve => setTimeout(resolve, 100));
     }
 }
+
+input.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        input.value = '';
+    }
+});
 
 ask_backend_clicks_loop();
