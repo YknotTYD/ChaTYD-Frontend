@@ -56,7 +56,7 @@ body {
             #0d2546,
             #050508
         ) 0 0 / 200% 200%;
-    animation: patternMove 20s linear infinite;
+    animation: patternMove 0s linear infinite;
     color: #fff;
 }
 
@@ -68,7 +68,7 @@ body {
     background-size: 200% 200%;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.03);
-    animation: containerGlow 4s ease-in-out infinite;
+    animation: containerGlow 0s ease-in-out infinite;
     backdrop-filter: blur(5px);
 }
 
