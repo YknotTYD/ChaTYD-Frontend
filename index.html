@@ -10,26 +10,29 @@
     </head>
 
     <body>
+
+        <button onclick = "ask_backend_button_click()">Button</button>
+    
         <script>
 
 ftch = document.getElementById("fetch");
+btn = document.getElementById("button");
 
-function ask_backend_time() {
+
+async function ask_backend_button_click() {
 
     fetch('https://yknottyd.duckdns.org/api', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({key: 'value'}),
+        body: JSON.stringify({request: "button_click"}),
     }).then((response) => {
         return response.text()
     }).then(data => {
         ftch.textContent = data;
     })
 }
-
-ask_backend_time();
 
         </script>
     </body>
