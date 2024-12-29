@@ -1,0 +1,36 @@
+<!--test.html-->
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Fetch API Test</title>
+        <h1 id = "fetch">None</h1>
+    </head>
+
+    <body>
+        <script>
+
+ftch = document.getElementById("fetch");
+
+fetch('https://yknottyd.duckdns.org/api', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({key: 'value'}),
+})
+.then(
+(response) => {
+    return response.text()
+})
+.then(data => {
+    ftch.textContent = data;
+})
+.catch((error) => console.error('Error:', error));
+
+        </script>
+    </body>
+
+</html>
