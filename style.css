@@ -105,7 +105,7 @@ body {
 .msg {
     margin-left: 2%;
     border-radius: 7px;
-    background: linear-gradient(90deg, #0c12c088, #0c128088, #0c12c088);
+    background: linear-gradient(90deg, #0c12c088, #0c129088, #0c12c088);
     background-size: 200% 100%;
     animation: gradientScroll 3s linear infinite;
     width: fit-content;
@@ -116,7 +116,7 @@ body {
 }
 
 .msg:hover {
-    box-shadow: inset 0 0 15px rgba(30, 94, 195, 0.2)
+    box-shadow: inset 0 0 15px rgba(30, 200, 255, 0.4)
 }
 
 input {
