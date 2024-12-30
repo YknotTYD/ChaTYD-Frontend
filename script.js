@@ -1,8 +1,11 @@
 //api.js
 
+//remove legacy code
+
 const input = document.querySelector('input');
 const ftch = document.getElementById("fetch");
 const btn = document.getElementById("button");
+const box = document.getElementById("box");
 
 async function tell_backend_button_click() {
 
@@ -47,4 +50,25 @@ input.addEventListener('keypress', (e) => {
     }
 });
 
-//ask_backend_clicks_loop();
+function add_message_bottom(message) {
+
+    var newp = document.createElement("p");
+    var newt = document.createTextNode(message);
+
+    newp.appendChild(newt);
+    newp.className = "msg";
+    box.append(newp);
+}
+
+function add_message_top(message) {
+
+    var newp = document.createElement("p");
+    var newt = document.createTextNode(message);
+
+    newp.appendChild(newt);
+    newp.className = "msg";
+    box.prepend(newp);
+}
+
+add_message_top("Hello top from JS.")
+add_message_bottom("Hello bottom from JS.")
