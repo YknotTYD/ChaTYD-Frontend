@@ -105,10 +105,10 @@ body {
 .msg {
     margin-left: 2%;
     border-radius: 7px;
-    background: linear-gradient(90deg, #0c121988, #1f2f4f44, #0c121988);
+    background: linear-gradient(90deg, #0c12c088, #0c128088, #0c12c088);
     background-size: 200% 100%;
-    animation: gradientScroll 10s linear infinite;
-    width: 20%;
+    animation: gradientScroll 3s linear infinite;
+    width: fit-content;
     padding-top: 7px;
     padding-bottom: 7px;
     padding-left: 7px;
