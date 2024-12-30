@@ -52,7 +52,7 @@ input.addEventListener('keypress', (e) => {
 
 function add_message_bottom(message) {
 
-    var newp = document.createElement("p");
+    var newp = document.createElement("pre");
     var newt = document.createTextNode(message);
 
     newp.appendChild(newt);
@@ -62,7 +62,7 @@ function add_message_bottom(message) {
 
 function add_message_top(message) {
 
-    var newp = document.createElement("p");
+    var newp = document.createElement("pre");
     var newt = document.createTextNode(message);
 
     newp.appendChild(newt);
@@ -71,4 +71,9 @@ function add_message_top(message) {
 }
 
 add_message_top("Hello top from JS.")
+add_message_top(`Multi-li\nne string te\nst.`)
 add_message_bottom("Hello bottom from JS.")
+
+window.onload = function() {
+    box.scrollTop = box.scrollHeight;
+};

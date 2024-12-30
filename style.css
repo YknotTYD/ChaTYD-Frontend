@@ -1,6 +1,7 @@
 /*style.css*/
 
-/*fixed double overflow scrollbar white square*/
+/*fix double overflow scrollbar white square*/
+/*make .container more sober*/
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
@@ -81,11 +82,11 @@ body {
     position: static;
 
     padding: 2.5rem;
-    background: linear-gradient(145deg, #0c1219, #0f1f3f, #060913, #0c1219);
+    background: linear-gradient(45deg, #0c1219, #0f1f3f, #060913, #0c1219);
     background-size: 150% 150%;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.03);
-    animation: containerGlow 3s ease-in-out infinite;
+    animation: containerGlow 0s ease-in-out infinite;
     backdrop-filter: blur(5px);
 
     margin-top: 2rem;
@@ -142,10 +143,11 @@ input::placeholder {
     color: rgba(255, 255, 255, 0.8);
 }
 
-p {
+pre {
     color: #ffffff;
     margin-top: 1.25rem;
     font-size: 0.95rem;
+    font-family: system-ui, -apple-system, sans-serif;
 }
 
 .container:hover {
