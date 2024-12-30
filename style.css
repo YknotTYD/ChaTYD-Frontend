@@ -92,20 +92,17 @@ body {
     width: 90vw;
     height: 60vh;
     margin: 5vh auto 2rem auto;
-    border-color: #000025ff;
     border-radius: 16px;
-    border-style: solid;
     background: #00000000;
     background: linear-gradient(145deg, #0c121977, #0f1f3f77);
 }
 
 .msg {
     margin-left: 2%;
-    border-style: solid;
     border-radius: 7px;
-    border-color: #000025ff;
-    /*background-color: #ffffffff;*/
-    background: linear-gradient(90deg, #0c121988, #1f2f4f88);
+    background: linear-gradient(90deg, #0c121988, #1f2f4f88, #0c121988);
+    background-size: 200% 100%;
+    animation: gradientScroll 3s linear infinite;
     width: 20%;
     padding-top: 7px;
     padding-bottom: 7px;
@@ -119,7 +116,7 @@ input {
     color: #ffffff;
     background: linear-gradient(to right, #0a1525, #0f2545, #050913, #0a1525);
     background-size: 200% 100%;
-    animation: gradientScroll 6s linear infinite; /* Added gradientScroll animation */
+    animation: gradientScroll 6s linear infinite;
     border: 2px solid rgba(30, 64, 175, 0.2);
     border-radius: 8px;
     width: 300px;
