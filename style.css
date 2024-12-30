@@ -98,6 +98,8 @@ body {
     border-radius: 16px;
     background: #00000000;
     background: linear-gradient(145deg, #0c121977, #0f1f3f77);
+    overflow-y: auto;
+    overflow-x: auto;
 }
 
 .msg {
@@ -148,5 +150,27 @@ p {
 }
 
 .container:hover {
-    border-color: rgba(30, 64, 175, 0.1);
+    border-color: rgba(1w0, 44, 125, 0.1);
+}
+
+.box::-webkit-scrollbar {
+    width: 15px;
+}
+
+.box::-webkit-scrollbar-track {
+    background: rgba(12, 18, 25, 0.3);
+    border-radius: 4px;
+}
+
+.box::-webkit-scrollbar-thumb {
+    background: rgba(10, 44, 95, 0.4);
+    border-radius: 4px;
+}
+
+.box::-webkit-scrollbar-thumb:hover {
+    background: rgba(20, 54, 125, 0.6);
+}
+
+.box::-webkit-scrollbar-button {
+    display: none; 
 }
