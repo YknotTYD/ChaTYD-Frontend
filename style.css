@@ -1,5 +1,7 @@
 /*style.css*/
 
+/*add msg hover*/
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 .source-code-pro {
@@ -46,16 +48,17 @@ body {
         repeating-conic-gradient(
             from 0deg,
             rgba(30, 64, 175, 0.03) 0deg 15deg,
-            transparent 15deg 30deg
+            transparent 80deg 95deg
         ) 50px 50px / 100px 100px,
-        linear-gradient(135deg,
+        linear-gradient(45deg,
             #050508,
             #0a1f3f,
             #070b14,
             #0d2546,
             #050508
         ) 0 0 / 200% 200%;
-    animation: patternMove 0s linear infinite;
+    animation: patternMove 5s linear infinite;
+    animation-direction: reverse;
     color: #fff;
 
     display: flex;
@@ -100,9 +103,9 @@ body {
 .msg {
     margin-left: 2%;
     border-radius: 7px;
-    background: linear-gradient(90deg, #0c121988, #1f2f4f88, #0c121988);
+    background: linear-gradient(90deg, #0c121988, #1f2f4f44, #0c121988);
     background-size: 200% 100%;
-    animation: gradientScroll 3s linear infinite;
+    animation: gradientScroll 10s linear infinite;
     width: 20%;
     padding-top: 7px;
     padding-bottom: 7px;
