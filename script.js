@@ -1,6 +1,7 @@
 //api.js
 
 //remove legacy code
+//make the input accept multi-line inputs
 
 const input = document.querySelector('input');
 const ftch = document.getElementById("fetch");
