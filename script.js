@@ -47,4 +47,4 @@ input.addEventListener('keypress', (e) => {
     }
 });
 
-ask_backend_clicks_loop();
+//ask_backend_clicks_loop();
